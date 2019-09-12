@@ -10,6 +10,7 @@
 #			should be used to create the instance. This key pair should
 #			be located in the ~/.aws/key_pairs directory (with the .pem
 #			extension. i.e. ~/.aws/key_pairs/my_key_pair.pem)
+# Example: $source launch_windows_instance.sh my_key_pair
 
 instance_id=$(aws ec2 run-instances \
 	--image-id ami-06a4e829b8bbad61e \
